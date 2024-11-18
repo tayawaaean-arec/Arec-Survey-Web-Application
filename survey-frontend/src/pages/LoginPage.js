@@ -118,21 +118,6 @@ function LoginPage() {
             </Typography>
           </Box>
 
-          <Box sx={{ textAlign: 'center', marginTop: 3 }}>
-            <Button
-              variant="outlined"
-              startIcon={<img src={googleLogo} alt="Google logo" style={{ width: 20, height: 20 }} />}
-              sx={{
-                borderColor: '#000082ff',
-                color: '#000082ff',
-                '&:hover': { borderColor: 'black', color: 'black' },
-                padding: '8px 16px',
-                borderRadius: 2,
-              }}
-            >
-              Sign in with Google
-            </Button>
-          </Box>
         </Paper>
       </Grid>
     </Grid>

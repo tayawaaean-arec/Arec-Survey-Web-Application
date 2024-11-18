@@ -163,7 +163,7 @@ function CreateAccountPage() {
 
           <Box sx={{ textAlign: 'center', marginTop: 2 }}>
             <Typography variant="body2">
-              Already have an account? <a href="/" style={{ color: '#000082ff', textDecoration: 'none' }}>Sign in</a>
+              Already have an account? <a href="/login" style={{ color: '#000082ff', textDecoration: 'none' }}>Sign in</a>
             </Typography>
           </Box>
         </Paper>
