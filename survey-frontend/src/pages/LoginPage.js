@@ -3,7 +3,6 @@ import { TextField, Button, Checkbox, FormControlLabel, Box, Typography, Grid, P
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../FirebaseConfig'; // Import Firebase auth
-import googleLogo from '../icons/google.svg';
 
 function LoginPage() {
   const navigate = useNavigate(); // Initialize navigate function
@@ -111,7 +110,6 @@ function LoginPage() {
 
           <Box sx={{ textAlign: 'center', marginTop: 2 }}>
             <Typography variant="body2">
-              <a href="#" style={{ color: '#000082ff', textDecoration: 'none' }}>Forgot Password?</a>
             </Typography>
             <Typography variant="body2" sx={{ marginTop: 1 }}>
               New on our platform? <a href="/create-account" style={{ color: '#000082ff', textDecoration: 'none' }}>Create an account</a>

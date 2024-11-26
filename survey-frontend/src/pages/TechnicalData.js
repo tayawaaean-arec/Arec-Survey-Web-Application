@@ -37,7 +37,7 @@ import { getDatabase, ref, get } from "firebase/database";
 import Sidebar from '../components/Sidebar';
 import * as XLSX from 'xlsx'; // Import xlsx library
 
-const SocioEcon = () => {
+const Technical = () => {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -59,7 +59,7 @@ const SocioEcon = () => {
   useEffect(() => {
     const fetchSurveyData = async () => {
       const db = getDatabase(); // Initialize the database
-      const dbRef = ref(db, 'surveys'); // Reference the "surveys" node
+      const dbRef = ref(db, 'techData'); // Reference the "surveys" node
       try {
         const snapshot = await get(dbRef);
         if (snapshot.exists()) {
@@ -134,7 +134,7 @@ const SocioEcon = () => {
       />
       <Box component="main" sx={{ flexGrow: 1, bgcolor: '#ecf0f1', p: 3, height: '100vh', overflowY: 'auto' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 4 }}>
-          <Typography variant="h4" sx={{ fontWeight: 'bold', fontFamily: 'Lato, sans-serif' }}>Socio-Economic Survey Data</Typography>
+          <Typography variant="h4" sx={{ fontWeight: 'bold', fontFamily: 'Lato, sans-serif' }}>Technical Survey Data</Typography>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
 
           </Box>
@@ -240,4 +240,4 @@ const SocioEcon = () => {
   );
 };
 
-export default SocioEcon;
+export default Technical;
