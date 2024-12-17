@@ -102,7 +102,50 @@ const SocioEcon = () => {
   };
 
   const allFlattenedRecords = surveyData.map((record) => flattenRecord(record));
-  const headers = Object.keys(allFlattenedRecords[0] || {});
+  const headers = [
+    "id", 
+    "interviewer", 
+    "date", 
+    "startTime", 
+    "endTime", 
+    "solarSystem", 
+    "yearInstalled", 
+    "longitude", 
+    "latitude", 
+    "province", 
+    "municipality", 
+    "barangay", 
+    "beneficiary.name",
+    "beneficiary.age",
+    "beneficiary.sex",
+    "beneficiary.maritalStatus",
+    "beneficiary.contactNo",
+    "beneficiary.education",
+    "beneficiary.occupation",
+    "intervieweeName",
+    ...Object.keys(allFlattenedRecords[0] || {}).filter(key => 
+      key !== "id" && 
+      key !== "interviewer" && 
+      key !== "date" && 
+      key !== "startTime" && 
+      key !== "endTime" && 
+      key !== "solarSystem" && 
+      key !== "yearInstalled" && 
+      key !== "longitude" && 
+      key !== "latitude" && 
+      key !== "province" && 
+      key !== "municipality" && 
+      key !== "barangay" &&
+      key !== "beneficiary.name" &&
+      key !== "beneficiary.age" &&
+      key !== "beneficiary.sex" &&
+      key !== "beneficiary.maritalStatus" &&
+      key !== "beneficiary.contactNo" &&
+      key !== "beneficiary.education" &&
+      key !== "beneficiary.occupation" &&
+      key !== "intervieweeName"
+    )
+  ];
 
   useEffect(() => {
     setFilteredData(

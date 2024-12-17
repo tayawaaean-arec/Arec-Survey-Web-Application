@@ -4,13 +4,13 @@ import { getDatabase, ref, get, onChildAdded } from "firebase/database";
 
 // Your web app's Firebase configuration (replace with your own config)
 const firebaseConfig = {
-  apiKey: "AIzaSyBZAF4TfnMirdETDqohta8TIQM2M6g4ho0",
-  authDomain: "surveyapp-80561.com",
-  databaseURL: "https://surveyapp-80561-default-rtdb.firebaseio.com/",
-  projectId: "surveyapp-80561",
-  storageBucket: "surveyapp-80561.firebasestorage.app",
-  messagingSenderId: "937259663428",
-  appId: "1:937259663428:android:4dd8ba065d15c45f8a3c11",
+  apiKey: "AIzaSyB9PNaz-GIS9EGLzPu1hUs9kFFk22h5RL0",
+  authDomain: "cares-2e2bf.com",
+  databaseURL: "https://cares-2e2bf-default-rtdb.asia-southeast1.firebasedatabase.app/",
+  projectId: "cares-2e2bf",
+  storageBucket: "cares-2e2bf.firebasestorage.app",
+  messagingSenderId: "470014868313",
+  appId: "1:470014868313:android:cf911f76914472d8b52a48",
 };
 
 // Initialize Firebase
